@@ -139,16 +139,16 @@ function validarIngresos(e) {
 
     }
     if (adults < 1) {
-        setErrorFor(inputAdults, 'No se pueden arrendar cabañas sin adultos');
+        setErrorFor(inputAdults, 'No se pueden alquilar motorhome sin adultos');
     } else if (cabins <= 1 && total >= 7) {
-        setErrorFor(inputAdults, 'El tope de personas es 6 por cabaña');
+        setErrorFor(inputAdults, 'El límite para este modelo de motorhome es de 6 personas');
     } else {
         setSuccessFor(inputAdults);
     }
     if (children === '') {
         setErrorFor(inputChildren, 'No puede estar vacía');
     } else if (cabins <= 1 && total >= 7) {
-        setErrorFor(inputChildren, 'El tope de personas es 6 por cabaña');
+        setErrorFor(inputChildren, 'El límite para este modelo de motorhome es de 6 personas');
     } else if (adults === 0 && children > adults) {
         setErrorFor(inputChildren, 'No puede ser mayor a los adultos');
     } else {
@@ -157,9 +157,9 @@ function validarIngresos(e) {
     if (cabins === '') {
         setErrorFor(inputCabins, 'No puede estar vacía');
     } else if (total >= 7 && cabins === 1) {
-        setErrorFor(inputCabins, 'El máximo de personas es 6, si desea más debe arrendar 2 cabañas.');
+        setErrorFor(inputCabins, 'El máximo de personas es 6, si son mas personas seleccione el modelo 2 de motorhome.');
     } else if (total >= 13 && cabins === 2) {
-        setErrorFor(inputCabins, 'El máximo de personas es 12, si desea más debe contactar a la administración.');
+        setErrorFor(inputCabins, 'El máximo de personas para los modelos disponibles es 12, si desea más debe contactar a la administración.');
     } else {
         setSuccessFor(inputCabins);
     }
