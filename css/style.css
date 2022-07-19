@@ -340,6 +340,7 @@ footer {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
+  margin-top: 2rem;
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -362,14 +363,14 @@ footer {
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
+  background-color: var(--color-wsmoke);
   margin: 2em auto; /* 15% from the top and centered */
   padding: 0.8em;
   width: 280px; /* Could be more or less, depending on screen size */
 }
 
 .modalResumen {
-  background-color: #fefefe;
+  background-color: var(--color-wsmoke);
   margin: 2em auto; /* 15% from the top and centered */
   padding: 0.8em;
   width: auto; /* Could be more or less, depending on screen size */
@@ -471,7 +472,7 @@ footer {
 }
 
 .formLogin-style button {
-  background-color: #ffdc83;
+  background-color: var(--color-corn);
   border: none;
   border-radius: 0.5em;
   color: #000000;
