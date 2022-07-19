@@ -101,7 +101,7 @@ function checkInputs(e) {
 			setErrorFor(passwordTwo, 'La contraseña no coincide');
 		} else {
 			addUserLocalStorage();
-			window.location.href = "./pages/reserva.html";
+			window.location.href = "./pages/alquiler.html";
 		}
 	}
 }
